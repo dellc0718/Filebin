@@ -8,11 +8,12 @@ import qrcode
 import pyperclip
 import threading
 
-class FilebinGUI:
+# DISCLAIMER: Some syntax was made with assistance of ClaudeAI & ChatGPT. This project is influence of Filebin on web browser and I wanted to make and run my own filebin locally for security purpose(avoiding malwares).
+class FilebinGUI: 
     def __init__(self, master):
         self.master = master
         master.title("Filebin - Easy Cloud File Sharing")
-        master.geometry("600x600")
+        master.geometry("600x600") # Size of UI
         
         # UI Components (similar to previous version)
         self.file_path_label = tk.Label(master, text="Selected File: None")
